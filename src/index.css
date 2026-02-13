@@ -1,15 +1,17 @@
 /* Fuente global */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 :root {
-  --primary: #2563eb;
-  --primary-soft: #e8f0fe;
-  --text-main: #1f2937;
-  --text-soft: #6b7280;
-  --bg-main: #f9fafb;
-  --card-bg: #ffffff;
+  --primary: #1d7f2c;
+  --secundary: #749e3a;
+  --primary-hover: #FBBF24;
+  --text-main: #1F2937;
+  --text-soft: #6B7280;
+  --bg-main: #FFF7ED;
+  --card-bg: #FFFFFF;
   --radius-xl: 24px;
   --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
 }
+
 
 section {
   padding: 80px 20px;

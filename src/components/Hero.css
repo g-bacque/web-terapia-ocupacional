@@ -33,15 +33,14 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #1e3a8a;
+  color: var(--primary);
 }
 
 .hero h2 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  color: #2563eb;
-}
+  color: var(--text-main);}
 
 .hero p {
   font-size: 1.125rem;
@@ -66,22 +65,22 @@
 }
 
 .hero-buttons .primary {
-  background-color: #2563eb;
+  background-color: var(--primary);
   color: white;
 }
 
 .hero-buttons .primary:hover {
-  background-color: #1d4ed8;
+  background-color: var(--secundary);
 }
 
 .hero-buttons .secondary {
   background-color: white;
-  color: #2563eb;
-  border: 2px solid #2563eb;
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 .hero-buttons .secondary:hover {
-  background-color: #e0e7ff;
+  background-color: #FFFAF0; /* beige claro al pasar el mouse */
 }
 
 /* Responsive */
@@ -104,6 +103,8 @@
       url('../assets/images/hero-bg.png');
   }
 
+  
+
   .hero h1 {
     font-size: 2rem;
   }
@@ -122,7 +123,22 @@
   }
 }
 
+
 @media (max-width: 480px) {
+
+      .hero{
+    background: 
+      linear-gradient(to bottom, white 50%, transparent 100%), 
+      url('../assets/images/hero-bg.png') center/cover no-repeat;
+  }
+
+  .hero {
+    padding: 4rem 1rem; /* reduce padding vertical en móviles */
+  }
+
+  .hero-content {
+    text-align: center;  /* centra el texto */
+  }
   .hero h1 {
     font-size: 1.5rem;
   }
