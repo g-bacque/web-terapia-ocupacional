@@ -6,9 +6,11 @@
   --primary-hover: #FBBF24;
   --text-main: #1F2937;
   --text-soft: #6B7280;
+  --text-white: #eeeeee;
   --bg-main: #FFF7ED;
   --card-bg: #FFFFFF;
   --radius-xl: 24px;
+  --radius-m: 5px;
   --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
 }
 

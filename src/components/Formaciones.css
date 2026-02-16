@@ -1,0 +1,50 @@
+.formaciones {
+    position: relative;
+    padding: 120px 20px;
+    overflow: hidden;
+  
+    /* COLOR BASE */
+    background-color: #ebdf63; /* amarillo suave elegante */
+  
+    background-image:
+      linear-gradient(
+        to left,
+        rgba(255, 244, 204, 0) 40%,
+        rgba(255, 244, 204, 0.6) 60%,
+        rgba(255, 244, 204, 0.85) 75%,
+        rgba(255, 244, 204, 1) 90%
+      ),
+      var(--bg-image);
+  
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+  
+  
+  /* CONTENEDOR */
+  .formaciones-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 420px;
+  }
+  
+  /* TEXTO */
+  .formaciones-content {
+    max-width: 520px;
+  }
+  
+  .formaciones-content h2 {
+    font-size: 2.2rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+  }
+  
+  .formaciones-content p {
+    color: var(--text-soft);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  
