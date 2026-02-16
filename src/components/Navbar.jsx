@@ -2,7 +2,7 @@ import "./Navbar.css";
 import logo from "../assets/images/logo-2.png";
 import { useEffect, useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({setActiveSection}) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,20 +18,28 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
 
-        {/* LOGO */}
-        <div className="navbar-logo">
-          <img src={logo} alt="Logo Rosario Vigliocco" />
-        </div>
+            {/* LOGO */}
+            <div className="navbar-logo">
+              <img src={logo} alt="Logo Rosario Vigliocco" />
+            </div>
 
-        {/* MENU */}
-        <nav className="navbar-menu">
-          <a href="#home">Home</a>
-          <a href="#about">About me</a>
-          <a href="#intervencion">Intervención</a>
-          <a href="#formaciones">Formaciones</a>
-          <a href="#asesoramiento">Asesoramiento</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
+            {/* MENU */}
+            <nav className="navbar-menu">
+      <button
+        onClick={() => {
+          setActiveSection("home");
+          window.scrollTo({ top: 0, behavior: "smooth" }); // 👈 hace scroll arriba
+        }}
+      >
+          Home
+        </button>
+        <button onClick={() => setActiveSection("bio")}>About me</button>
+        <button onClick={() => setActiveSection("intervencion")}>Intervención</button>
+        <button onClick={() => setActiveSection("formaciones")}>Formaciones</button>
+        <button onClick={() => setActiveSection("asesoramiento")}>Asesoramiento</button>
+        <button onClick={() => setActiveSection("contacto")}>Contacto</button>
+      </nav>
+
 
       </div>
     </header>
