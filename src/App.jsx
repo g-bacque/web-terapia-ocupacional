@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Intervencion from "./components/Intervencion";
 import IntervencionMosaico from "./components/IntervencionMosaico";
 import Formaciones from "./components/Formaciones";
+import Asesoramiento from "./components/Asesoramiento";
 
 
 
@@ -19,6 +20,7 @@ export default function App() {
       <Intervencion />
       
       <Formaciones />
+      <Asesoramiento />
 
       <ContactForm />
     </>

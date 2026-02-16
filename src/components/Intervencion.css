@@ -6,11 +6,17 @@
 /* layout */
 .intervencion-container {
   display: grid;
-  grid-template-columns: 3fr 1fr; /* más espacio para las fotos */
+  grid-template-columns: minmax(0, 4fr) minmax(0, 1fr);
+
   gap: 40px;
   max-width: 1400px; /* ancho máximo del contenedor principal */
   margin: 0 auto;
   justify-content: stretch;
+}
+
+.intervencion-container > *,
+.mosaic-editorial > * {
+  min-width: 0;
 }
 
 .intervencion-image {

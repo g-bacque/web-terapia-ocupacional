@@ -1,0 +1,85 @@
+.asesoramiento {
+  position: relative;
+  padding: 120px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../assets/images/asesoramiento-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+  .asesoramiento::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    /*background: rgba(255, 255, 255, 0.6);*/
+  }
+  .asesoramiento-overlay {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .asesoramiento-card {
+    max-width: 820px;
+    width: 100%;
+  
+    padding: 50px 60px;
+    border-radius: var(--radius-m);
+  
+    /* efecto glass elegante */
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  
+    /* profundidad */
+    box-shadow:
+      0 20px 60px rgba(0,0,0,0.12),
+      0 8px 20px rgba(0,0,0,0.06);
+  
+    text-align: center;
+  
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+  
+  .asesoramiento-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 28px 80px rgba(0,0,0,0.16),
+      0 12px 30px rgba(0,0,0,0.08);
+  }
+  
+
+  .asesoramiento-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
+  }
+  
+  .asesoramiento-card p {
+    color: var(--text-soft);
+    line-height: 1.7;
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+  @media (max-width: 900px) {
+
+    .asesoramiento {
+      padding: 100px 20px;
+    }
+  
+    .asesoramiento-card {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .asesoramiento-card {
+      padding: 35px 25px;
+    }
+  }
+  
