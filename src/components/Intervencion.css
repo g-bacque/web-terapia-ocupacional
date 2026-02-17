@@ -1,5 +1,5 @@
 .intervencion {
-  background-color: #6bc859; /* verde agua suave */
+  background-color: var(--bg-main); /* verde agua suave */
   padding: 100px 10px; /* reducimos padding lateral */
 }
 
@@ -25,12 +25,12 @@
 
 .intervencion-content h2 {
   font-size: 2.2rem;
-  color: var(--text-white);
+  color: var(--lila-secondary);
   margin-bottom: 20px;
 }
 
 .intervencion-content p {
-  color: var(--text-white);
+  color: var(--text-soft);
   line-height: 1.7;
   margin-bottom: 16px;
   max-width: 55ch;

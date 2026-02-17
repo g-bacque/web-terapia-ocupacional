@@ -7,6 +7,8 @@ import Intervencion from "./components/Intervencion";
 import Formaciones from "./components/Formaciones";
 import Asesoramiento from "./components/Asesoramiento";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
+
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -23,14 +25,19 @@ export default function App() {
           <Formaciones />
           <Asesoramiento />
           <ContactForm />
+
+          
         </>
       )}
+
+
 
       {activeSection === "bio" && <About />}
       {activeSection === "intervencion" && <Intervencion />}
       {activeSection === "formaciones" && <Formaciones />}
       {activeSection === "asesoramiento" && <Asesoramiento />}
       {activeSection === "contacto" && <ContactForm />}
+      <Footer />      
     </>
   );
 }

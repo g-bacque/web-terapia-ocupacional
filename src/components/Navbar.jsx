@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "../assets/images/logo-2.png";
+import logo from "../assets/images/logo-3.png";
 import { useEffect, useState } from "react";
 
 export default function Navbar({setActiveSection}) {

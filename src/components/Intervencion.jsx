@@ -13,6 +13,7 @@ export default function Intervencion() {
 
         {/* TEXTO */}
         <div className="intervencion-content">
+          
           <h2>Intervención</h2>
 
           <p>

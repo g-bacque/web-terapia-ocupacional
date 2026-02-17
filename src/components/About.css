@@ -1,6 +1,6 @@
 .about {
   padding: 80px 20px;
-  background-color: var(--bg-main);
+  background-color: var(--bio-bg);
   text-align: center;
 }
 
@@ -8,12 +8,12 @@
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: var(--primary);
+  color: var(--bg-main);
 }
 
 .about p {
   font-size: 1.125rem;
-  /*color: var(--primary);*/
+  color: var(--text-white);
   max-width: 500px;
   margin: 0 auto;
 }

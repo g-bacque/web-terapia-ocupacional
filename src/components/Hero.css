@@ -13,15 +13,19 @@
       rgba(255, 255, 255, 1) 50%,  /* blanco hasta la mitad */
       rgba(255, 255, 255, 0) 80%   /* transición a transparente */
     ),
-    url('../assets/images/hero-bg.png');
+    url('../assets/images/hero-bg-2.png');
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /* Texto */
 .hero-content {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
   position: relative;
   z-index: 1;
   max-width: 600px;
@@ -33,19 +37,19 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--primary);
+  color: var(--lila-secondary);
 }
 
 .hero h2 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  color: var(--text-main);}
+  color: var(--lila);}
 
 .hero p {
   font-size: 1.125rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--text-soft);
 }
 
 .hero-buttons {
@@ -65,22 +69,23 @@
 }
 
 .hero-buttons .primary {
-  background-color: var(--primary);
+  background-color: var(--lila-secondary);
   color: white;
 }
 
 .hero-buttons .primary:hover {
-  background-color: var(--secundary);
+  background-color: var(--lila-hover);
 }
 
 .hero-buttons .secondary {
   background-color: white;
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  color: var(--lila-secondary);
+  border: 2px solid var(--lila-secondary);
 }
 
 .hero-buttons .secondary:hover {
-  background-color: #FFFAF0; /* beige claro al pasar el mouse */
+  color: azure;
+  background-color: var(--lila-hover); /* beige claro al pasar el mouse */
 }
 
 /* Responsive */
@@ -125,20 +130,36 @@
 
 
 @media (max-width: 480px) {
-
-      .hero{
-    background: 
-      linear-gradient(to bottom, white 50%, transparent 100%), 
-      url('../assets/images/hero-bg.png') center/cover no-repeat;
-  }
-
   .hero {
-    padding: 4rem 1rem; /* reduce padding vertical en móviles */
+    padding: 60px 20px;
+  
+    /* ❗ SOLO imagen, sin gradient */
+    background-image: url('../assets/images/hero-bg-2.png');
+  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    /* capa blanca uniforme */
+    background: rgba(255, 255, 255, 0.78);
+
+    z-index: 1;
   }
 
+  /* el contenido debe quedar por encima */
   .hero-content {
-    text-align: center;  /* centra el texto */
+    position: relative;
+    z-index: 2;
   }
+
+
   .hero h1 {
     font-size: 1.5rem;
   }
@@ -151,8 +172,4 @@
     font-size: 0.9rem;
   }
 
-  .hero-content {
-    max-width: 100%;
-    padding: 10px 15px;
-  }
 }

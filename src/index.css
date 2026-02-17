@@ -3,10 +3,18 @@
 :root {
   --primary: #1d7f2c;
   --secundary: #749e3a;
+  --lila: #ad5992;
+  --lila-secondary: #7A5398;
+  --lila-terciary: #D78CB5;
   --primary-hover: #FBBF24;
+  --lila-hover: #D9707C;
   --text-main: #1F2937;
   --text-soft: #6B7280;
   --text-white: #eeeeee;
+  --bio-bg: #B35787;
+  --formaciones-bg: #FFCEB4;
+  --formaciones-bg-rgb: 255, 206, 180;
+  --formaciones-text: #727794;
   --bg-main: #FFF7ED;
   --card-bg: #FFFFFF;
   --radius-xl: 24px;
@@ -29,7 +37,7 @@ section + section {
 }
 
 h1, h2, h3 {
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
 }
 
 p {

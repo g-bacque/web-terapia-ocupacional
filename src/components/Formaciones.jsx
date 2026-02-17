@@ -11,6 +11,8 @@ export default function Formaciones() {
       <div className="container formaciones-container">
 
         <div className="formaciones-content">
+
+        <div className="asesoramiento-card">
           <h2>Formaciones</h2>
 
           <p>
@@ -24,6 +26,7 @@ export default function Formaciones() {
             prácticas aplicables a contextos reales, promoviendo una mirada
             respetuosa e inclusiva.
           </p>
+          </div>
         </div>
 
       </div>
