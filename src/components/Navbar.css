@@ -39,7 +39,7 @@
     gap: 28px;
   }
   
-  .navbar-menu a {
+  .navbar-menu button {
     text-decoration: none;
     font-weight: 500;
     color: var(--text-main);
@@ -60,22 +60,22 @@
   
   /* hover elegante */
   
-  .navbar-menu a::after {
+  .navbar-menu button::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -6px;
     width: 0%;
     height: 2px;
-    background: var(--primary);
+    background: var(--lila);
     transition: width 0.25s ease;
   }
   
-  .navbar-menu a:hover {
-    color: var(--primary);
+  .navbar-menu button:hover {
+    color: var(--lila);
   }
   
-  .navbar-menu a:hover::after {
+  .navbar-menu button:hover::after {
     width: 100%;
   }
 
@@ -84,11 +84,11 @@
     box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   }
   
-  @media (max-width: 900px) {
+  @media (max-width: 1050px) {
 
     /* logo más pequeño */
     .navbar-logo img {
-      height: 52px;
+      height: 50px;
     }
   
     /* menú más compacto */
@@ -96,12 +96,20 @@
       gap: 18px;
     }
   
-    .navbar-menu a {
+    .navbar-menu button {
       font-size: 0.95rem;
     }
   }
+
+  @media (max-width: 1000px) {
+
+    /* logo más pequeño */
+    .navbar-logo img {
+      height: 40px;
+    }
+  }
   
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
 
     .navbar-container {
       flex-direction: column;
@@ -111,7 +119,6 @@
   
     /* logo arriba */
     .navbar-logo img {
-      height: 48px;
       margin-bottom: 10px;
     }
   
@@ -122,8 +129,44 @@
       gap: 14px;
     }
   
-    .navbar-menu a {
+    .navbar-menu button {
       font-size: 0.9rem;
     }
   }
   
+  @media (max-width: 780px) {
+
+    /* logo arriba */
+    .navbar-logo img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+  
+
+  }
+
+  @media (max-width: 480px) {
+
+    .navbar-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    /* logo arriba */
+    .navbar-logo img {
+      margin-bottom: 10px;
+      height: 30px;
+    }
+  
+    /* menú debajo */
+    .navbar-menu {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+  
+    .navbar-menu button {
+      font-size: 0.7rem;
+    }
+  }
